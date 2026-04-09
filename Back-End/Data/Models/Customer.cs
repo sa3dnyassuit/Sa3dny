@@ -22,6 +22,8 @@ namespace Sa3dny.Data.Models
         public string phone_Customer { get; set; }
  
         public DateTime? created_at { get; set; }
+        public ICollection<Requests> requests { get; set; }
+        public ICollection<Review> reviews { get; set; }
 
 
     }
