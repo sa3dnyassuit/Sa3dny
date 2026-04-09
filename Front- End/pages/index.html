@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sa3dny - Professional Services</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- زرار القائمة -->
+      <div class="menu-toggle" id="openMenu">
+        &#9776; <!-- hamburger icon -->
+      </div>
+      <!-- اللوجو -->
+      <div class="logo">
+        <img src="../images/IMG_7966.PNG" alt="Sa3dny Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Medical Service</a></li>
+            <li><a href="#">Educational Service</a></li>
+            <li><a href="#">Housekeeping Service</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Providers <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Top Providers</a></li>
+            <li><a href="#">New Providers</a></li>
+            <li><a href="#">Nearby Providers</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-auth">
+
+        <button class="btn-register">Register</button>
+
+        <a href="../pages/login.html">
+          <button class="btn-login">Login</button>
+        </a>
+
+        <div class="profile-icon" id="openProfile">
+
+          <i class="fas fa-user-circle"></i>
+
+        </div>
+
+      </div>
+    </nav>
+    <!--  القائمة الجانبية اليسرى-->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo" id="sidebarLogo">
+          <img src="../images/IMG_7966.PNG" alt="Sa3dny Logo">
+        </div>
+
+        <div class="search-input-container" id="searchInputContainer">
+          <input type="text" placeholder="Search..." id="sidebarSearchInput">
+        </div>
+
+        <div class="header-controls">
+          <div class="search-box" id="searchBtn">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="close-btn" id="closeSidebar">
+            &times;
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="../pages/index.html"><i class="fas fa-home"></i> Home / Dashboard</a>
+      </div>
+
+      <div class="menu-group">
+        <span class="group-title"><i class="fas fa-cog"></i> Services</span>
+
+        <div class="sub-group">
+          <span class="sub-title">Medical Service</span>
+          <div class="items-list">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+          </div>
+        </div>
+
+        <div class="sub-group">
+          <span class="sub-title">Educational Service</span>
+          <div class="items-list">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+          </div>
+        </div>
+
+        <div class="sub-group">
+          <span class="sub-title">Housekeeping Service</span>
+          <div class="items-list">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+      </div>
+    </div>
+
+    <!-- القائمة الجانبية اليمنى -->
+     <div class="overlay" id="overlay"></div>
+    <div class="profile-sidebar" id="profileSidebar">
+      <div class="header-controls">
+        <div class="close-btn" id="closeProfileSidebar">
+          &times;
+        </div>
+      </div>
+      <div class="profile-header">
+
+        <img src="../images/pic4.jpeg" class="profile-img">
+
+        <h3>Salma Abdo</h3>
+
+        <p>Student</p>
+
+      </div>
+
+
+      <div class="profile-links">
+
+        <a href="./my-profile.html"> <i class="fa-regular fa-user"></i> My Profile</a>
+        <a href="./my-bookings.html"> <i class="fa-regular fa-calendar-check"></i> My Bookings</a>
+        
+        <div class="divider-line"></div>
+
+        <a href="./my-wallet.html"><i class="fa-solid fa-wallet"></i>My Wallet</a>
+
+        <a href="./messages.html"><i class="fa-regular fa-message"></i> Messages</a>
+        
+        <div class="divider-line"></div>
+
+      
+        <a href="#"> <i class="fa-solid fa-gear"></i>Settings</a>
+
+        <a href="../pages/welcome.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+
+
+      </div>
+
+    </div>
+    <div class="overlay" id="overlay"></div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-split">
+      <div class="hero-content-side">
+        <div class="text-wrapper">
+          <h1 class="main-title">
+            Your Future <br>
+            <span class="highlight">Starts Here.</span>
+          </h1>
+          <p class="sub-text">
+            Everything you need in one place <br>
+            <strong>Housekeeping, Medical, Educational & Housing Services — all in one place</strong>
+          </p>
+          <div class="hero-btns">
+            <button class="btn-3d btn-primary">Explore Services</button>
+            <button class="btn-3d btn-secondary">Learn More</button>
+          </div>
+          <div class="hero-search">
+            <input type="text" placeholder="What services do you need?">
+            <button>Search</button>
+          </div>
+        </div>
+      </div>
+
+    <div class="hero-image-side">
+
+<div class="scene">
+<div class="hero-carousel" id="heroCarousel">
+
+<div class="hero-card">
+<img src="https://cdn-icons-png.flaticon.com/512/995/995053.png">
+<h3>Home services</h3>
+</div>
+
+<div class="hero-card">
+<img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+<h3>Educational services</h3>
+</div>
+
+<div class="hero-card">
+<img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png">
+<h3>Medical services</h3>
+</div>
+
+<div class="hero-card">
+<img src="https://cdn-icons-png.flaticon.com/512/619/619153.png">
+<h3>Housing services</h3>
+</div>
+
+<div class="hero-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+<h3>Delivery services</h3>
+</div>
+
+</div>
+</div>
+
+</div>
+    </section>
+
+
+    <!-- Services Section -->
+
+    <section class="services">
+
+      <div class="section-title">
+
+        <p>OUR SERVICES</p>
+
+        <h2>What We Offer</h2>
+
+      </div>
+
+
+      <section class="services-grid">
+
+      <a href="../pages/home-services.html" class="service-link">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+
+<video src="../images/WhatsApp Video 2026-02-16 at 5.54.22 PM.mp4" autoplay loop muted playsinline></video>
+
+<h3>Home Services</h3>
+
+<p class="card-info">
+Rting 4.8 ⭐
+Orders +200
+</p>
+
+</div>
+
+<div class="card-back">
+Cleaning, maintenance and house help.
+</div>
+
+</div>
+
+</div>
+
+</a>
+
+
+
+        <a href="../pages/educational-services.html" class="service-link">
+
+  <div class="card">
+
+    <div class="card-inner">
+
+      <div class="card-front">
+
+        <video src="../images/WhatsApp Video 2026-02-25 at 5.20.04 AM.mp4" autoplay loop muted playsinline></video>
+
+        <h3 class="educational-font">Educational Services</h3>
+
+        <p class="card-info">
+          Rting 4.2 ⭐
+          Orders +150
+        </p>
+      </div>
+
+      <div class="card-back">
+        Tutoring and academic help.
+      </div>
+
+    </div>
+
+  </div>
+
+</a>
+
+
+
+        <a href="./medical-services.html" class="service-link">
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front nursing-card">
+        <video src="../images/WhatsApp Video 2026-02-16 at 6.28.19 PM.mp4" autoplay loop muted playsinline></video>
+        <h3>Medical Services</h3>
+        <p class="card-info">
+          Rting 4.0 ⭐
+          Orders +210
+        </p>
+      </div>
+
+      <div class="card-back">
+        Home nursing and injections.
+      </div>
+    </div>
+  </div>
+</a>
+</section>
+</section>
+
+    <!-- providers section-->
+    <section class="providers">
+
+      <div class="section-title">
+
+        <p>TOP PROVIDERS</p>
+        <h2>Featured Providers</h2>
+
+      </div>
+
+
+      <div class="providers-container">
+
+       
+
+      <div class="provider-card">
+
+     <img src="../images/pic1.jpeg">
+
+      <h3>Ahmed Hassan</h3>
+
+       <p>Nurse Visit</p>
+
+       <span>⭐ 4.9</span>
+
+     <button>Book Now</button>
+
+     </div>
+
+</a>
+
+
+
+        <div class="provider-card">
+
+          <img src="../images/pic2.jpeg">
+
+          <h3>Sara Ali</h3>
+
+          <p>Home Cleaning</p>
+
+          <span>⭐ 4.8</span>
+
+          <button>Book Now</button>
+
+        </div>
+
+
+
+        <div class="provider-card">
+
+          <img src="../images/pic3.jpeg">
+
+          <h3>Mohamed Adel</h3>
+
+          <p>CV Writer</p>
+
+          <span>⭐ 5.0</span>
+
+          <button>Book Now</button>
+
+        </div>
+
+
+      </div>
+      <!-- Real Numbers Section -->
+      <section class="stats">
+  <div class="stat-container">
+    <div class="shape-outline medical">
+      <i class="fas fa-syringe"></i>
+      <span class="counter" data-target="500">0</span><span class="plus">+</span>
+    </div>
+    <p class="stat-label">Services</p>
+  </div>
+
+  <div class="stat-container">
+    <div class="shape-outline house">
+      <i class="fas fa-house-chimney"></i>
+      <span class="counter" data-target="120">0</span><span class="plus">+</span>
+    </div>
+    <p class="stat-label">Providers</p>
+  </div>
+
+  <div class="stat-container">
+    <div class="shape-outline document">
+      <i class="fas fa-file-invoice"></i>
+      <span class="counter" data-target="15">0</span><span class="plus">+</span>
+    </div>
+    <p class="stat-label">Cities</p>
+  </div>
+
+  <div class="stat-container">
+    <div class="shape-outline wrench">
+      <i class="fas fa-wrench"></i>
+      <span class="counter" data-target="24">0</span><span class="plus">/7</span>
+    </div>
+    <p class="stat-label">Maintenance</p>
+  </div>
+</section>
+    <!-- How It Works -->
+
+    <section class="steps">
+
+      <div class="section-title">
+
+        <p>HOW IT WORKS</p>
+
+        <h2>Simple Process</h2>
+
+      </div>
+
+      <div class="steps-container">
+
+        <div class="step">
+
+          <i class="fas fa-search"></i>
+
+          <h3>Search Service</h3>
+
+          <p>Quickly find what you need</p>
+
+        </div>
+
+
+        <div class="step">
+
+          <i class=" fas fa-user"></i>
+
+          <h3>Choose Provider</h3>
+
+          <p>Compare ratings and choose the best provider</p>
+
+        </div>
+
+
+
+        <div class="step">
+
+          <i class="fas fa-check"></i>
+
+          <h3>Book Service</h3>
+
+          <p>Confirm your booking instantly</p>
+
+        </div>
+
+        <div class="step">
+
+          <i class="fas fa-handshake"></i>
+
+          <h3>Service Delivered</h3>
+
+          <p>Get your service done professionally</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Why Us -->
+
+    <section class="why">
+
+      <div class="why-container">
+
+        <div>
+
+          <h2>Why Choose Sa3dny?</h2>
+
+          <p>
+
+            ✔ Verified Providers <br>
+
+            ✔ Fast Booking <br>
+
+            ✔ Affordable Prices <br>
+
+            ✔ 24/7 Support
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="../images/IMG_7966.PNG" alt="Sa3dny Logo">
+      </div>
+      <div class="footer-subscribe">
+        <span>Subscribe now</span>
+        <div class="subscribe-input-group">
+          <input type="email" placeholder="Your email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-col">
+        <h4>About</h4>
+        <p>
+
+          Sa3dny connects students with trusted service providers.
+
+          From home services to tutoring and medical care — everything in one place.
+
+        </p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Case</a></li>
+          <li><a href="#">Request Pickup</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Working Hours</h4>
+        <p>Mon - Fri: 9:00AM - 6:00PM</p>
+        <p>Sat - Sun: 8:00AM - 4:00PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Add: New Hyde Park, NY 11040</p>
+        <p><i class="fas fa-envelope"></i> Email: example@info.com</p>
+        <p><i class="fas fa-phone"></i> Phone: 333 666 0000</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright 2023 by About template All Right Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script/script.js"></script>
+  <script src="../script/menu.js"></script>
+</body>
+
+</html>
