@@ -24,5 +24,9 @@ namespace Sa3dny.Data.Models
         [DisplayName("Rate")]
         public double? rate_Provider { get; set; }
         public DateTime created_at { get; set; }
+        public ICollection<Review> reviews { get; set; }
+        public ICollection<Provider_Service> provider_Services { get; set; }
+        public ICollection<Requests> requests { get; set; }
+
     }
 }

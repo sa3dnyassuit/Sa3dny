@@ -20,5 +20,10 @@ namespace Sa3dny.Data.Models
         [Required]
         [DisplayName("Service Min price")]
         public decimal Min_price { get; set; }
+
+        public Home_Service Home_Service { get; set; }
+        public Edu_Service Edu_Service { get; set; }
+        public ICollection<Provider_Service> provider_services { get; set; }
+        public ICollection<Requests> requests { get; set; }
     }
 }
