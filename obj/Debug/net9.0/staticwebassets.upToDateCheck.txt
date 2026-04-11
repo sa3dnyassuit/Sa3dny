@@ -1,0 +1,139 @@
+wwwroot\File.html
+wwwroot\images\background.jpeg
+wwwroot\images\home services\77551353d1ab8d211fa488e3d03b8245.jpg
+wwwroot\images\home services\carpenter.png
+wwwroot\images\home services\cleaning.png
+wwwroot\images\home services\cleaning_after.jpeg
+wwwroot\images\home services\cleaning_before.jpeg
+wwwroot\images\home services\cv.png
+wwwroot\images\home services\cv_after.jpeg
+wwwroot\images\home services\cv_before.jpeg
+wwwroot\images\home services\doctor_visit.png
+wwwroot\images\home services\doctor_visit_after.jpeg
+wwwroot\images\home services\doctor_visit_before.jpeg
+wwwroot\images\home services\electricity.png
+wwwroot\images\home services\electricity_after.jpeg
+wwwroot\images\home services\electricity_before .jpeg
+wwwroot\images\home services\excel.png
+wwwroot\images\home services\follow_up_after.jpeg
+wwwroot\images\home services\follow_up_before.jpeg
+wwwroot\images\home services\injection_service.png
+wwwroot\images\home services\medical_follow_up.png
+wwwroot\images\home services\nursing.png
+wwwroot\images\home services\plumbing.png
+wwwroot\images\home services\plumbing_after.jpeg
+wwwroot\images\home services\plumbing_before.jpeg
+wwwroot\images\home services\presentation.png
+wwwroot\images\home services\presentation_after.jpeg
+wwwroot\images\home services\presentation_before.jpeg
+wwwroot\images\home services\word .png
+wwwroot\images\home services\word_after.jpeg
+wwwroot\images\home services\word_before.jpeg
+wwwroot\images\icons\cleaning.png
+wwwroot\images\icons\hospital.png
+wwwroot\images\icons\hour.png
+wwwroot\images\icons\id-card.png
+wwwroot\images\icons\medicine.png
+wwwroot\images\icons\moto.png
+wwwroot\images\IMG_7966.PNG
+wwwroot\images\logo white.PNG
+wwwroot\images\new.jpeg
+wwwroot\images\new2.jpeg
+wwwroot\images\new3.jpeg
+wwwroot\images\photo.jpeg
+wwwroot\images\photo1.jpeg
+wwwroot\images\pic1.jpeg
+wwwroot\images\pic2.jpeg
+wwwroot\images\pic3.jpeg
+wwwroot\images\pic4.jpeg
+wwwroot\images\WhatsApp Image 2026-02-25 at 3.01.30 AM.jpeg
+wwwroot\images\WhatsApp Video 2026-02-16 at 5.54.22 PM.mp4
+wwwroot\images\WhatsApp Video 2026-02-16 at 6.28.19 PM.mp4
+wwwroot\images\WhatsApp Video 2026-02-25 at 5.20.04 AM.mp4
+wwwroot\pages\become-provider.html
+wwwroot\pages\cleaning-service.html
+wwwroot\pages\create-new-password.html
+wwwroot\pages\educational-services.html
+wwwroot\pages\forgot-password.html
+wwwroot\pages\home-services.html
+wwwroot\pages\index.html
+wwwroot\pages\login.html
+wwwroot\pages\medical-services.html
+wwwroot\pages\messages.html
+wwwroot\pages\my-bookings.html
+wwwroot\pages\my-profile.html
+wwwroot\pages\my-wallet.html
+wwwroot\pages\otp.html
+wwwroot\pages\provider-profile.html
+wwwroot\pages\register.html
+wwwroot\pages\request-success.html
+wwwroot\pages\welcome.html
+wwwroot\script\auth.js
+wwwroot\script\menu.js
+wwwroot\script\messages.js
+wwwroot\script\my-booking.js
+wwwroot\script\my-profile.js
+wwwroot\script\request-success.js
+wwwroot\script\script.js
+wwwroot\script\service-bubbles.js
+wwwroot\script\translate.js
+wwwroot\style\become-provider.css
+wwwroot\style\create-new-password.css
+wwwroot\style\educational-service.css
+wwwroot\style\forgot-password.css
+wwwroot\style\home-services.css
+wwwroot\style\messages.css
+wwwroot\style\my-booking.css
+wwwroot\style\my-profile.css
+wwwroot\style\my-wallet.css
+wwwroot\style\otp.css
+wwwroot\style\provider-profile.css
+wwwroot\style\register.css
+wwwroot\style\request-success.css
+wwwroot\style\style.css
+wwwroot\style\stylee.css
+wwwroot\style\welcome.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\File.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\become-provider.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\cleaning-service.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\create-new-password.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\educational-services.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\forgot-password.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\home-services.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\index.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\login.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\medical-services.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\messages.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\my-bookings.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\my-profile.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\my-wallet.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\otp.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\provider-profile.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\register.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\request-success.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\pages\welcome.html
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\auth.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\menu.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\messages.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\my-booking.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\my-profile.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\request-success.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\script.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\service-bubbles.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\script\translate.js
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\become-provider.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\create-new-password.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\educational-service.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\forgot-password.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\home-services.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\messages.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\my-booking.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\my-profile.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\my-wallet.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\otp.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\provider-profile.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\register.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\request-success.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\style.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\stylee.css
+D:\Sa3dnyCo\Sa3dny\wwwroot\style\welcome.css

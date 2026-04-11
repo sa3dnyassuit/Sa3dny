@@ -70,23 +70,6 @@ namespace Sa3dny.Data
                 .HasForeignKey(r => r.Request_Id)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<Customer>()
-                .HasOne(c => c.Location)
-                .WithMany(l => l.Customers)
-                .HasForeignKey(c => c.LocationId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Customer>()
-                .HasOne(c => c.Governorate)
-                .WithMany(g => g.Customers)
-                .HasForeignKey(c => c.GovernorateId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Provider>()
-                .HasOne(p => p.Location)
-                .WithMany()
-                .HasForeignKey(p => p.LocationId)
-                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Provider>()
                 .HasOne(p => p.Governorate)

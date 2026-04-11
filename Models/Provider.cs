@@ -19,12 +19,19 @@ namespace Sa3dny.Data.Models
         public double? rate_Provider { get; set; }
 
         [Required]
+        [DisplayName("Governorate")]
+        public int GovernorateId { get; set; }
+
+        [ForeignKey("GovernorateId")]
+        public Governorate Governorate { get; set; }
+
+        [Required]
         [DisplayName("Service Category")]
         public int ServiceCategoryId { get; set; }
 
         [ForeignKey("ServiceCategoryId")]
         public ServiceCategory ServiceCategory { get; set; }
-      
+
         [Required]
         [DisplayName("Service")]
         public int ServiceId { get; set; }
@@ -32,13 +39,8 @@ namespace Sa3dny.Data.Models
         [ForeignKey("ServiceId")]
         public Service Service { get; set; }
 
-        [ForeignKey("GovernorateId")]
-        public Governorate Governorate { get; set; }
-
-        [ForeignKey("LocationId")]
-        public Location Location { get; set; }
-
        
+
         [Required]
         [DisplayName("National ID Image")]
         public string NationalIdImagePath { get; set; }

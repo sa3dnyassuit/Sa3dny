@@ -24,13 +24,10 @@ namespace Sa3dny.Data.Models
         [MinLength(6)]
         public string PasswordHash { get; set; }
 
-        [Required]
-        [DisplayName("Governorate")]
-        public int GovernorateId { get; set; }
-
+        
         [Required]
         [DisplayName("Location")]
-        public int LocationId { get; set; }
+        public string LocationName { get; set; }
 
         public DateTime? created_at { get; set; }
     }
