@@ -253,11 +253,15 @@ namespace Sa3dny.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("GovernorateId")
+                    b.Property<int?>("GovernorateId_Governorate")
                         .HasColumnType("int");
 
-                    b.Property<int>("LocationId")
+                    b.Property<int?>("LocationId_Location")
                         .HasColumnType("int");
+
+                    b.Property<string>("LocationName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -276,9 +280,9 @@ namespace Sa3dny.Migrations
 
                     b.HasKey("Id_Customer");
 
-                    b.HasIndex("GovernorateId");
+                    b.HasIndex("GovernorateId_Governorate");
 
-                    b.HasIndex("LocationId");
+                    b.HasIndex("LocationId_Location");
 
                     b.ToTable("Customers");
                 });
@@ -555,8 +559,9 @@ namespace Sa3dny.Migrations
                     b.Property<int>("GovernorateId")
                         .HasColumnType("int");
 
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
+                    b.Property<string>("LocationName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -598,8 +603,6 @@ namespace Sa3dny.Migrations
                     b.HasKey("provider_id");
 
                     b.HasIndex("GovernorateId");
-
-                    b.HasIndex("LocationId");
 
                     b.HasIndex("ServiceCategoryId");
 
@@ -912,21 +915,13 @@ namespace Sa3dny.Migrations
 
             modelBuilder.Entity("Sa3dny.Data.Models.Customer", b =>
                 {
-                    b.HasOne("Sa3dny.Data.Models.Governorate", "Governorate")
+                    b.HasOne("Sa3dny.Data.Models.Governorate", null)
                         .WithMany("Customers")
-                        .HasForeignKey("GovernorateId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .HasForeignKey("GovernorateId_Governorate");
 
-                    b.HasOne("Sa3dny.Data.Models.Location", "Location")
+                    b.HasOne("Sa3dny.Data.Models.Location", null)
                         .WithMany("Customers")
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Governorate");
-
-                    b.Navigation("Location");
+                        .HasForeignKey("LocationId_Location");
                 });
 
             modelBuilder.Entity("Sa3dny.Data.Models.Edu_Service", b =>
@@ -966,12 +961,6 @@ namespace Sa3dny.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Sa3dny.Data.Models.Location", "Location")
-                        .WithMany()
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("Sa3dny.Data.Models.ServiceCategory", "ServiceCategory")
                         .WithMany("Providers")
                         .HasForeignKey("ServiceCategoryId")
@@ -985,8 +974,6 @@ namespace Sa3dny.Migrations
                         .IsRequired();
 
                     b.Navigation("Governorate");
-
-                    b.Navigation("Location");
 
                     b.Navigation("Service");
 
