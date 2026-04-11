@@ -1,0 +1,412 @@
+.messages-wrapper {
+  padding: 120px 5% 50px;
+  background: #f8fafc;
+  height: 100vh;
+  margin-top: -4%;
+}
+
+.messages-card {
+  background: white;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 75vh;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid #f1f5f9;
+}
+
+/* contact side*/
+.contacts-list {
+  border-right: 1px solid #f1f5f9;
+  background: #fafbfc;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  padding: 25px;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.user-card.active {
+  background: white;
+  border-left: 4px solid #27ae60;
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* chat main content*/
+.chat-main {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  flex-shrink: 0;
+  padding: 20px 30px;
+  border-bottom: 1px solid #f1f5f9;
+  background: white;
+  z-index: 10;
+}
+
+/* message design */
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.message p {
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  max-width: 75%;
+  width: fit-content;
+}
+
+.incoming {
+  align-items: flex-start;
+}
+
+.incoming p {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-bottom-left-radius: 5px;
+}
+
+.outgoing {
+  align-items: flex-end;
+}
+
+.outgoing p {
+  background: #27ae60;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+/* chat foot*/
+.chat-footer {
+  flex-shrink: 0;
+  padding: 20px 30px;
+  border-top: 1px solid#f1f5f9;
+  background: white;
+  display: flex;
+  gap: 15px;
+}
+
+.chat-footer input {
+  flex: 1;
+  background: #f8fafc;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* price offer button*/
+.price-offer-btn {
+  background: #f1f5f9;
+  color: #27ae60;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.price-offer-btn:hover {
+  background: #e2e8f0;
+}
+
+/* price model*/
+.price-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.price-input-wrapper {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+}
+
+.price-input-wrapper input {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  outline: none;
+  text-align: center;
+}
+
+.modal-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-btns button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.confirm-btn {
+  background: #27ae60;
+  color: white;
+}
+.cancel-btn {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/*success-icon  */
+.success-icon {
+  font-size: 60px;
+  color: #27ae60;
+  margin-bottom: 20px;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+#successMessage h3 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+#successMessage p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* loading bar*/
+.loader-bar {
+  width: 100%;
+  height: 4px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #27ae60;
+  border-radius: 10px;
+  animation: loadingAnim 1.5s infinite ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loadingAnim {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* pay button*/
+.pay-now-btn {
+  width: 100%;
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.pay-now-btn:hover {
+  background: #219150;
+  transform: translateY(-2px);
+}
+
+/* error message*/
+.input-error {
+  border: 1px solid #e74c3c !important;
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.send-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  width: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* empty chat*/
+.empty-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #94a3b8;
+}
+
+.empty-chat i {
+  font-size: 60px;
+  margin-bottom: 15px;
+  opacity: 0.3;
+}
+
+.active-chat-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.avater-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.avater-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* status dot*/
+.status-dot {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.status-dot.online {
+  background-color: #27ae60;
+}
+
+.status-dot.offline {
+  background-color: #94a3b8;
+}
+
+/* seach bar*/
+.search-bar {
+  background: #f1f5f9;
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chat-body::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+.chat-body::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}

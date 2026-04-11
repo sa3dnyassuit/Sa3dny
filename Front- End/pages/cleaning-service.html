@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Cleaning Service</title>
+<link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+<section class="home-services">
+
+<h1>Cleaning Service</h1>
+
+<div class="services-grid">
+
+<div class="service-box">
+
+<i class="fas fa-broom"></i>
+
+<h3>Cleaning</h3>
+
+<p>Describe your cleaning problem and request a provider.</p>
+
+<button onclick="openForm()">Request Service</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FORM -->
+
+<div id="serviceForm" class="form-popup">
+
+<h2>Cleaning Request</h2>
+
+<input type="text" placeholder="Your Problem">
+
+<input type="text" placeholder="Address">
+
+<input type="text" placeholder="Phone Number">
+
+<button>Send Request</button>
+
+</div>
+
+
+<script>
+
+function openForm(){
+document.getElementById("serviceForm").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
