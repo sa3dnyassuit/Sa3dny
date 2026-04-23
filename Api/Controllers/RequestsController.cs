@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Sa3dny.Api.DTOs.Requests;
@@ -86,6 +87,56 @@ namespace Sa3dny.Api.Controllers
           && r.Status == "Pending").ToListAsync();
 
             return Ok(requests);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPut("admin/update")]
+        public async Task<IActionResult> updateRequest(AdminUpdateRequestDto dto)
+        {
+            var request = await _context.Requests.FindAsync(dto.Request_Id);
+
+            if (request == null)
+                return NotFound("Request not found");
+
+            var validStatuses = new[] { "Pending", "Accept", "Decline", "Cancelled" };
+
+            if (!validStatuses.Contains(dto.Status))
+                return BadRequest("Invalid status");
+
+            request.Description_Req = dto.Description_Req;
+            request.location = dto.Address;
+            request.phone = dto.Phone;
+            request.Service_Id = dto.Service_Id;
+            request.Status = dto.Status;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                message = "Request updated successfully by admin",
+                requestId = request.Request_Id,
+                newStatus = request.Status
+            });
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpDelete("admin/delete/{id}")]
+        public async Task<IActionResult> deleteRequest(int id)
+        {
+            var request = await _context.Requests.FindAsync(id);
+
+            if (request == null)
+                return NotFound("Request not found");
+
+            _context.Requests.Remove(request);
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                message = "Request deleted permanently",
+                requestId = id
+            });
         }
     }
 }
